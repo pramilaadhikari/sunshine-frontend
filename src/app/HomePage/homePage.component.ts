@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: 'home-page',
+  templateUrl: './homePage.component.html',
   
 })
-export class AppComponent {
+export class HomePageComponent {
   title = 'BankHomepage';
 }

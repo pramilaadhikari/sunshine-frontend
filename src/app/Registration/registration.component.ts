@@ -9,7 +9,7 @@ import { RegistrationServices } from './registration.service';
     templateUrl: './registration.component.html'
 })
 
-export class UserComponent {
+export class RegistrationComponent {
     user: Registration=new Registration();
     response: string;
 
@@ -20,7 +20,6 @@ export class UserComponent {
     store(){
         let url = "http://localhost:8181/customer/add"
         this.ms.sendToServer(url,this.user).subscribe(data => {
-         
     });
 }
 }

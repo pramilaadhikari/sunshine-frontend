@@ -1,20 +1,19 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { registration } from './registration';
-import { Observable } from 'rxjs';
+import {  Registration } from './registration';
 
 @Injectable()   
 
-export class registrationServices {
+export class RegistrationServices {
 
-    cust : registration[];
+    
     constructor(private http:HttpClient){
 
     }
-    sendToServer(url : string):Observable<registration[]> {
+    sendToServer(url,user:Registration) {
         
-        return this.http.get<registration[]>(url)
+        return this.http.post(url,user)
         } 
              
         }

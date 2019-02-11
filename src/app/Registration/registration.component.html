@@ -14,35 +14,35 @@
 
 
 <label for="name"><b>First Name: </b></label>
-<input type="text" name="firstName" [(ngModel)] = "cust.firstName" required><br><br>
+<input type="text" name="firstName" [(ngModel)] = "user.firstName" required><br><br>
 
 
 
 <label for="name"><b>Middle Name: </b></label>
-<input type="text" name="middleName" [(ngModel)] = "cust.middleName" required><br><br>
+<input type="text" name="middleName" [(ngModel)] = "user.middleName" required><br><br>
 
 <b>Last Name:</b>
-<input type="text" name="lastName" [(ngModel)] = "cust.lastName" required><br><br>
+<input type="text" name="lastName" [(ngModel)] = "user.lastName" required><br><br>
 
 <b>Father's Name: </b>
-<input type="text" name="fatherName" [(ngModel)] = "cust.fatherName" required><br><br>
+<input type="text" name="fatherName" [(ngModel)] = "user.fatherName" required><br><br>
 
 <b>Mobile No: </b>
-<input type="text" name="mobile" [(ngModel)] = "cust.mobile" required><br><br>
+<input type="text" name="mobile" [(ngModel)] = "user.mobile" required><br><br>
 
 <b>Email ID: </b>
-<input type="text" name="email" [(ngModel)] = "cust.email" required><br><br>
+<input type="text" name="email" [(ngModel)] = "user.email" required><br><br>
 
 <b>Aadhar card no: </b>
-<input type="text" name="aadhar" [(ngModel)] = "cust.aadhar"required><br><br>
+<input type="text" name="aadhar" [(ngModel)] = "user.aadhar"required><br><br>
 
 
 <b>Date Of Birth: </b>
-<input type="text" name="dateofbirth" [(ngModel)] = "cust.dateofbirth" required><br><br>
+<input type="text" name="dateofbirth" [(ngModel)] = "user.dateofbirth" required><br><br>
 
 
 <b>Address: </b>
-<input type="text" name="address" [(ngModel)] = "cust.address" required><br><br>
+<input type="text" name="address" [(ngModel)] = "user.address" required><br><br>
 
 
 <button type="submit"class="registerbtn"
@@ -54,20 +54,21 @@ class="container signin">
 </div>
 
 <div class= "container signin">
-    <p>Already have an account? <router-outlet>Click Here<a>[routerLink]="['/login']">Sign In</a>
-        </router-outlet>></p>
+        <h1>Hello {{user.firstName}}</h1>
+        <h1> {{user.middleName}}</h1>
+        <h1> {{user.lastName}}</h1>
+        <h1> {{user.fatherName}}</h1>
+        <h1> {{user.mobile}}</h1>
+        <h1> {{user.email}}</h1>
+        <h1> {{user.aadhar}}</h1>
+        <h1> {{user.dateofbirth}}</h1>
+        <h1> {{user.address}}</h1>
+    
 </div>
+
 
 
 </form>
 
-<h1>Hello {{cust.firstName}}</h1>
-<h1> {{cust.middleName}}</h1>
-<h1> {{cust.lastName}}</h1>
-<h1> {{cust.fatherName}}</h1>
-<h1> {{cust.mobile}}</h1>
-<h1> {{cust.email}}</h1>
-<h1> {{cust.aadhar}}</h1>
-<h1> {{cust.dateofbirth}}</h1>
-<h1> {{cust.address}}</h1>
+
 </body>

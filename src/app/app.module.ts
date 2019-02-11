@@ -5,22 +5,27 @@ import { FormsModule }   from '@angular/forms';
  
 
 import { AppComponent } from './app.component';
-import { registrationComponent } from './Registration/registration.component';
+
 import { loginComponent } from './Registration/LoginPage/login.component';
+import { RegistrationServices } from './Registration/registration.service';
+import { UserComponent } from './Registration/registration.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    registrationComponent,
-    loginComponent
+    loginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RegistrationServices, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

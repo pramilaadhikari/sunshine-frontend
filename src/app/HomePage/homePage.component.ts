@@ -2,14 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-   
-    <registration></registration>
-   
-    
-  `,
-  styles: []
+  templateUrl: './app.component.html',
+  
 })
 export class AppComponent {
-  title = 'Home-Page1';
+  title = 'BankHomepage';
 }

@@ -20,6 +20,8 @@ export class RegistrationComponent {
     store(){
         let url = "http://localhost:8181/customer/add"
         this.ms.sendToServer(url,this.user).subscribe(data => {
+            this.response = data['status'];
+
     });
 }
 }

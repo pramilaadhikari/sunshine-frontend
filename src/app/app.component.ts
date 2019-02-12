@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <home-page></home-page>
+  
   `,
   styles: []
 })

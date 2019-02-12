@@ -11,14 +11,14 @@
                 <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="users.Password"required><br><br>
                  <span class="psw">Forgot <a href="#">password?</a></span><br>
                  <span class="psw">Forgot <a href="#">username?</a></span><br><br>
-                 <span class="psw"> <a href="#">New Registration!</a></span><br><br>
-                <button type="submit">Login</button>
+                 <span class="psw"> <a href="#">New Registration!</a></span><br><br> 
+                <button type="submit" (click)="verify()">Login</button>
                 
               </div>
             </body>
             </form>
-            <h1>yo, {{users.Username}}</h1>
-            <h1>yo, {{users.password}}</h1> 
+            <h1>{{response}}</h1>
+           
       
             <!-- <h2>Modal Login Form</h2>
       

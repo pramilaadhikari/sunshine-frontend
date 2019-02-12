@@ -1,13 +1,12 @@
-<div class="panel" >
+<div class="panel" style="background: url('assets/Image/bank.jpg');background-size:cover">
   <div class="panel-heading">{{title}}</div>
   <div class="panel-body">
-<div  class="table-responsive">
-  
-    <ul class="nav navbar-nav">
-          
-            <li><a [routerLink]="['/login']">Login</a></li>
-            <li><a [routerLink]="['/registration']">New user?</a></li>
-          </ul>
-          <router-outlet></router-outlet>
+    <div class="table-responsive">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['/login']">Login</a></li>
+          <li><a [routerLink]="['/registration']">Open an Account?</a></li>
+        </ul>
+        <router-outlet></router-outlet>
+    </div>
+  <div> 
 </div>
-<div>

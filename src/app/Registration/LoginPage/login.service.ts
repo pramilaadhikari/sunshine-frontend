@@ -1,19 +1,18 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {  Registration } from './registration';
+import {  User } from './login';
 
 @Injectable()   
 
-export class RegistrationServices {
-users : Registration[];
+export class loginServices {
+
     
     constructor(private http:HttpClient){
 
     }
-    sendToServer(url,users) {
+    sendToServer(url:string,user:User) {
         
-        return this.http.post(url,users)
+        return this.http.post(url,user)
         } 
              
         }

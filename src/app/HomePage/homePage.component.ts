@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   
 })
 export class HomePageComponent {
-  title = 'BankHomepage';
+  title = 'Welcome';
 }
+

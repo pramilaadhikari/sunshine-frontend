@@ -1,0 +1,38 @@
+<div class="panel" style="background-color:rgb(212,237,245)">
+    <div style="text-align: center">
+    
+ <div class="panel-body">
+         
+ <div class="table-responsive">
+     <h1>Account Statement</h1>
+
+      
+<table class border ="table" style="text-align:center">
+ <table class="table">
+     <thead>
+         <tr>
+             <th>Transaction ID</th>
+             <th>Amount</th>
+             <th>Account Type</th>
+             <th>Account Number</th>
+            
+           
+         </tr>
+     </thead>
+     <tbody>
+         
+         <tr *ngFor="let x of statement">
+            <td>{{x.transid}}</td>
+            <td>{{x.amount}}</td>
+            <td>{{x.type}}</td>
+            <td>{{x.account.accountNumber}}</td>
+            
+         </tr>
+        
+     </tbody>
+ </table>
+</table>
+</div>
+</div>
+</div>
+</div>
